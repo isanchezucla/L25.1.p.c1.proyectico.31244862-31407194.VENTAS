@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="ventaForm">
+      <h1>Datos de la venta</h1>
+      <label>Nombre del cliente</label>
+      <input type="text" id="ventaForm_inCliente" placeholder="Cliente"></input>
+      <label>Número de factura</label>
+      <input type="text" id="ventaForm_inFactura" placeholder="Factura"></input>
+      <label>Costo del artículo</label>
+      <input type="text" id="ventaForm_inCosto" placeholder="Costo"></input>
+      <label>Cantidad de artículos</label>
+      <input type="text" id="ventaForm_inCnArticulos" placeholder="Cantidad de artículos"></input>
+      <button id="ventaForm_btProcesar">Procesar</button> 
+    </section>
+    <section id="mainForm">
+      <h3>Información de la Tienda</h3>
+      <label>Monto inicial de la caja</label>
+      <input id="mainForm_inMontoCaja" placeholder="El monto inicial en caja es :"></input>
+      <label>Porcentaje de incremento</label>
+      <input id="mainForm_inPorcIncremento" placeholder="El porcentaje de incremento es:"></input>
+      <button id="mainForm_btIniciar">Iniciar</button>
+      <table id="mainForm_tabla">
+        <tr>
+          <th>Cliente</th>
+          <th>Factura</th>
+          <th>Costo</th>
+          <th>Cantidad de articulos</th>
+        </tr>
+      </table>
+      <div id="mainForm_salida"></div>
+    </section>
+  </body>
+    <script type="module">
+      import Cl_principal from "./js/principal.js";
+      new Cl_principal()
+    </script>
+</html>
