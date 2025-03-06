@@ -30,9 +30,6 @@ export default class Cl_mTienda {
         if (venta.cnArticulos === 1) {
             this.contClientes1Articulo++;
         }
-        else {
-            return 0;
-        }
     }
     totalCaja() {
         return this.montoCaja + this.acumMonto;
